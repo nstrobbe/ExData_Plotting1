@@ -1,3 +1,11 @@
+###############################################################################
+## Define the plot routine.
+## Input is a properly converted data file.
+## If that file doesn't exist, the function will try to create it.
+## If the source file is not called "household_power_consumption.txt", 
+## you can specify the correct name by passing orig.file = <correct name> 
+## to the plot function, and it will get passed along to the reader function.
+###############################################################################
 plot1 <- function(data.input = "skim.Rda", ...){
     # Load file with main code
     source("power_consumption.R")
@@ -22,3 +30,10 @@ plot1 <- function(data.input = "skim.Rda", ...){
     
     dev.off()
 }
+
+############################################################
+## Now actually execute the plot routine.
+## This way the plot gets made when this script is sourced.
+## Default values should be ok.
+############################################################
+plot1()
