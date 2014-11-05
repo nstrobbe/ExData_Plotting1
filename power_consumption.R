@@ -53,13 +53,10 @@ myplot3 <- function(data, legend.border = "o"){
     )
     
     lines(data[,"Time"], data[,"Sub_metering_1"]
-          , type = "l"
           , col = "black")
     lines(data[,"Time"], data[,"Sub_metering_2"]
-          , type = "l"
           , col = "red")
     lines(data[,"Time"], data[,"Sub_metering_3"]
-          , type = "l"
           , col = "blue")
     
     legend(x = "topright"
