@@ -18,7 +18,7 @@ plot4 <- function(data.input = "skim.Rda", ...){
     
     par(mfrow=c(2,2))
     
-    myplot2(data)
+    myplot2(data, ylabel="Global Active Power")
     myplot4.1(data)
     myplot3(data, legend.border="n")
     myplot4.2(data)

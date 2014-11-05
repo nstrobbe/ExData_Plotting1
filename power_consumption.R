@@ -34,11 +34,11 @@ skim.file <- function(orig.file = "household_power_consumption.txt"
 }
 
 # Plot2
-myplot2 <- function(data){
+myplot2 <- function(data, ylabel = "Global Active Power (kilowatts)"){
     plot(data[,"Time"], data[,"Global_active_power"]
          , type = "l"
          , xlab = ""
-         , ylab = "Global Active Power (kilowatts)"
+         , ylab = ylabel
          , main = "")
     
 }
