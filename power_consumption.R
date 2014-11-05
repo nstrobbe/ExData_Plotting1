@@ -91,9 +91,10 @@ myplot4.2 <- function(data){
     )
 }
 
+# Check if the processed input exists
+# If not, create it
+# Tried out the tryCatch functionality for fun :-)
 check.input <- function(data.input, ...){
-    # Check if the processed input exists
-    # If not, create it
     if (!file.exists(data.input)){
         print("Input not found, will try to create it")
         tryCatch(skim.file(out.name=data.input, ...)

@@ -1,4 +1,5 @@
 plot2 <- function(data.input = "skim.Rda", ...){
+    # Load file with main code
     source("power_consumption.R")
     
     # Check if the processed input exists
