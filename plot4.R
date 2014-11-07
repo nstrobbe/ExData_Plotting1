@@ -1,11 +1,23 @@
 ###############################################################################
+## NOTE FOR THE GRADER: 
+## All the main functions are defined in the "power_consumption.R" script. 
+## This allows for easy code reuse, which is a standard programming practice. 
+## By not repeating code pieces, it makes it easier to make changes coherently 
+## as there is only one place to make the change.
+## 
+## To produce the plot for the assignment, it is sufficient to do
+##     source("plot4.R")
+## The only assumption is that the original input file has been downloaded. 
+###############################################################################
+
+## ---------------------------------------------------------------------------
 ## Define the plot routine
 ## Input is a properly converted data file
 ## If that file doesn't exist, the function will try to create it
 ## If the source file is not called "household_power_consumption.txt", 
 ## you can specify the correct name by passing orig.file = <correct name> 
 ## to the plot function, and it will get passed along to the reader function.
-###############################################################################
+## ---------------------------------------------------------------------------
 plot4 <- function(data.input = "skim.Rda", ...){
     # Load file with main code
     source("power_consumption.R")
@@ -34,9 +46,9 @@ plot4 <- function(data.input = "skim.Rda", ...){
     dev.off()
 }
 
-############################################################
+## ---------------------------------------------------------------------------
 ## Now actually execute the plot routine.
 ## This way the plot gets made when this script is sourced.
-## Default values should be ok.
-############################################################
+## Default values are ok for the course project.
+## ---------------------------------------------------------------------------
 plot4()

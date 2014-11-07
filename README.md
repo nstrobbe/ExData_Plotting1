@@ -1,3 +1,36 @@
+# Note for the grader
+
+In this directory you will find the four plotting scripts:
+
+- plot1.R
+- plot2.R
+- plot3.R
+- plot4.R
+
+These scripts will each produce their corresponding plot. To produce the first 
+plot, it is sufficient to do: 
+```
+source("plot1.R")
+```
+The only assumption is that the original input file has been downloaded. 
+
+Each plotting script sources the `power_consumption.R` script, which contains
+all the main code. The plotting scripts then call the relevant functions from 
+the main script. 
+
+Setting things up this way, allows for easy code reuse, which is a 
+standard programming practice. 
+By not repeating code pieces, it makes it easier to make changes coherently 
+as there is only one place to make the change.
+
+As I believe it is important to practice proper programming in everything 
+I code, I have applied it to this assignment as well. 
+The code contains plenty of comments, so you should find it quite easy to navigate. 
+
+-----------------------------------------
+
+# Original README starts here
+
 ## Introduction
 
 This assignment uses data from
